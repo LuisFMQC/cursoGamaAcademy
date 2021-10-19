@@ -37,44 +37,26 @@
 
         <main role="main">
 
-
-            <p>
-                Baby Yoda é um membro pequeno da mesma
-                espécie alienígena sem nome dos personagens
-                Star Wars Yoda e Yaddle, com quem ele
-                compartilha uma forte habiliade na força
-            </p>
-            
-            <button aria-label="Acesse o site oficial da
-            Disney para saber mais sobre o Baby Yoda">Saber mais</button>
-
-            <p id="bsite">Site do baby Yoda</p>
-
-            <p>
+            <p id="texto1">
                 Baby Yoda é um membro pequeno da mesma
                 espécie alienígena sem nome dos personagens
                 Star Wars Yoda e Yaddle, com quem ele
                 compartilha uma forte habilidade na força
             </p>
 
-
-            <p id="article-description">
-                Baby Yoda é um membro pequeno da mesma
-                espécie alienígena sem nome dos personagens
-                Star Wars Yoda e Yaddle, com quem ele
-                compartilha uma forte habilidade na força
-            </p>
+            <button id="botao1" onclick="atualizacao()">Atualização de texto</button>
 
             <script type="text/javascript">
             
-            var paragrafo = document.getElementById("article-description");    
-            
-            paragrafo.style.color= "blue";
+                function atualizacao() {
+                    var texto1 = document.getElementById("texto1");
 
-            paragrafo.innerText = "Texto Mudou!";
-
+                    texto1.innerText = "Star Wars!";
+                }
             
             </script>
+
+            
 
             <form>
                 <label>E-mail</label>
