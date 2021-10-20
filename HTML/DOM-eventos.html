@@ -37,7 +37,7 @@
 
         <main role="main">
 
-            <p id="texto1">
+            <p id="texto1" onmouseover="cor()" onmouseout="semcor()">
                 Baby Yoda é um membro pequeno da mesma
                 espécie alienígena sem nome dos personagens
                 Star Wars Yoda e Yaddle, com quem ele
@@ -52,7 +52,19 @@
                     var texto1 = document.getElementById("texto1");
 
                     texto1.innerText = "Star Wars!";
+        
+                }
+
+                function cor() {
+                    var texto1 = document.getElementById("texto1");
+
                     texto1.style.color= "rgb(255, 0, 0)";
+                }
+
+                function semcor() {
+                    var texto1 = document.getElementById("texto1");
+
+                    texto1.style.color= "rgb(0, 0, 0)";
                 }
             
             </script>
